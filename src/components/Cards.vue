@@ -1,5 +1,5 @@
 <template>
-<div class="cards"> 
+<div class="cards" id="trabajos"> 
 <!-- TODO :hacer un FOR con varias cards, para que se cargue de manera dinamica -->
 <b-card-group deck>
   <b-card

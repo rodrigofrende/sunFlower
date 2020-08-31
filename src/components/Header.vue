@@ -1,16 +1,16 @@
 <template>
-<div class="head">
-  <b-navbar toggleable="lg" type="dark" variant="dark">
+<div class="head" id="inicio">
+  <b-navbar toggleable="lg" fixed="top" type="dark" variant="dark">
     <b-navbar-brand href="#">SunFlower</b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">Inicio</b-nav-item>
-        <b-nav-item href="#" >Carrousel</b-nav-item>
-        <b-nav-item href="#" >Servicios</b-nav-item>
-        <b-nav-item href="#" >Trabajos</b-nav-item>
-        <b-nav-item href="#" >Contacto</b-nav-item>
+        <b-nav-item @click="scroll(ref='inicio')">Inicio</b-nav-item>
+        <b-nav-item @click="scroll(ref='carrousel')" >Carrousel</b-nav-item>
+        <b-nav-item  @click="scroll(ref='servicios')" >Servicios</b-nav-item>
+        <b-nav-item @click="scroll(ref='trabajos')" >Trabajos</b-nav-item>
+        <b-nav-item @click="scroll(ref='contacto')" >Contacto</b-nav-item>
 
         <b-nav-item-dropdown right>
           
@@ -32,6 +32,13 @@ export default {
   name: 'Header',
   props: {
     msg: String
+  },
+  methods: {
+    scroll(ref) {
+      // este metodo scrollea hasta el punto de la pag que se toque en el header
+      const element = document.getElementById(ref);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
 </script>
