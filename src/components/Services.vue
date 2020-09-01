@@ -1,9 +1,10 @@
 <template>
 <div class="container" id="servicios">
-    <div class="text-center">
-        <h2 class="section-heading text-uppercase">Services</h2>
+    <div class="text-center margin">
+        <h2 class="section-heading">Servicios</h2>
         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
     </div>
+    <br>
     <div class="row text-center">
         <div class="col-md-4">
             <b-icon icon="sun" class="serviceIcon" aria-hidden="true"></b-icon>
@@ -44,4 +45,7 @@ export default {
     height: 120px;
 }
 
+.container{
+    padding-top: 4% ;
+}
 </style>
