@@ -8,7 +8,7 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-item @click="scroll(ref='inicio')">Inicio</b-nav-item>
         <b-nav-item @click="scroll(ref='carrousel')" >Carrousel</b-nav-item>
-        <b-nav-item  @click="scroll(ref='servicios')" >Servicios</b-nav-item>
+        <b-nav-item  @click="scroll(ref='servicios')" >Serviccios</b-nav-item>
         <b-nav-item @click="scroll(ref='trabajos')" >Trabajos</b-nav-item>
         <b-nav-item @click="scroll(ref='contacto')" >Contacto</b-nav-item>
 
