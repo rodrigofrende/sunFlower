@@ -67,6 +67,8 @@ export default {
 .cards{
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 .padding-cards {
     margin: 20px;

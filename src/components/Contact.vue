@@ -1,30 +1,34 @@
 <template>
 <div class="containerContact" id="contacto">
-    
-    <div class="text-center" >
-        <h1 class="title">Contacto</h1>
-        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-    </div>
-    <div class="footerDiv">
-        <div class="col-lg-4 ">
-                <b-img v-bind="mainProps" class="roundedImage" rounded="circle" alt="Circle image" fluid src="https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg"></b-img>
-                <h4>Alberto Frende</h4>
-                <p class="text-muted">Lead Developer</p>
-        </div>
-        <div class="col-lg-2 ">
-                <font-awesome-icon icon="user-secret" />
-        </div>
-    </div>
-    
-    
-    <!-- TODO agregar iconos de font awesome con las redes / wpp messagge -->
+    <b-row>
+        <b-col cols="3">
+            <h2> Contacto </h2> 
+            <b-col>
+                <h5 class="footer-align-left"> Instagram <font-awesome-icon icon="user-secret" /> </h5>           
+            </b-col>
+            <b-col>
+                <h5 class="footer-align-left"> Facebook <font-awesome-icon icon="user-secret" /> </h5>
+            </b-col>
+            <b-col>
+                <h5 class="footer-align-left"> Whastsapp <font-awesome-icon icon="user-secret" /> </h5>
+            </b-col>
+        </b-col>
+        <b-col>
+            
+        </b-col>
+    </b-row>
 </div>
 </template>
 
 <script>
+
 export default {
     name: 'About',
+    components: {
+
+    },
     data() {
+
       return {
         
       }
@@ -39,10 +43,14 @@ export default {
 
 .containerContact{
     background-color: #343a40;
-    padding-top: 2%;
+    padding-top: 1%;
     
 }
 
+.footer-align-left {
+    align-content: flex-start;  
+    text-align: center;  
+}
 .footerDiv {
     margin-top: 2%;
     flex-direction: row;

@@ -33,7 +33,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #e9ecef;
   margin-top: 60px;
+  background-color: #1f2123; ;
+  font-family: 'Syne', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@615&display=swap');
+
 </style>

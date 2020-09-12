@@ -1,7 +1,7 @@
 <template>
 <div class="head" id="inicio">
   <b-navbar toggleable="lg" fixed="top" type="dark" variant="dark">
-    <b-navbar-brand href="#">SunFlower</b-navbar-brand>
+    <b-navbar-brand href="#">SunFlower <b-icon icon="sun" class="" aria-hidden="true"></b-icon> <i class="fas fa-seedling"></i> </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
