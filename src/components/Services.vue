@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="servicios">
     <div class="text-center margin">
-        <h2 class="section-heading">Servicios</h2>
+        <h1 class="section-heading">Servicios</h1>
         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
     </div>
     <br>
