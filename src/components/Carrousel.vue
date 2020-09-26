@@ -45,29 +45,7 @@
             class="d-block w-100"
             width="1024"
             height="480"
-            src="../assets/Carrousel/carru3.jpg"
-            alt="image slot"
-          >
-        </template>
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <template v-slot:img>
-          <img
-            class="d-block w-100"
-            width="1024"
-            height="480"
             src="../assets/Carrousel/carru4.jpg"
-            alt="image slot"
-          >
-        </template>
-      </b-carousel-slide>
-      <b-carousel-slide>
-        <template v-slot:img>
-          <img
-            class="d-block w-100"
-            width="1024"
-            height="480"
-            src="../assets/Carrousel/carru5.jpg"
             alt="image slot"
           >
         </template>

@@ -1,5 +1,5 @@
 <template>
-<div class="head" id="inicio">
+<div class="head shadow " id="inicio">
   <b-navbar toggleable="lg" fixed="top" type="dark" variant="dark">
     <b-navbar-brand @click="scroll(ref='inicio')" href="#">SunFlower <b-icon icon="sun" class="" aria-hidden="true"></b-icon> <i class="fas fa-seedling"></i> </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
