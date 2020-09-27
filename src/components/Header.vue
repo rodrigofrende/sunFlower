@@ -1,7 +1,7 @@
 <template>
 <div class="head shadow " id="inicio">
   <b-navbar toggleable="lg" fixed="top" type="dark" variant="dark">
-    <b-navbar-brand @click="scroll(ref='inicio')" href="#">SunFlower <b-icon icon="sun" class="" aria-hidden="true"></b-icon> <i class="fas fa-seedling"></i> </b-navbar-brand>
+    <b-navbar-brand @click="scroll(ref='inicio')" id="logoText" href="#">Green Storming <b-icon icon="sun" class="" aria-hidden="true"></b-icon> <i class="fas fa-seedling"></i> </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <!-- Right aligned nav items -->
@@ -34,6 +34,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#logoText {
+  font-family: 'Lobster', cursive;
+}
 
 .head {
   width: 100%;
