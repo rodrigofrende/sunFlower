@@ -1,5 +1,8 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
+
 import App from './App.vue'
+import store from "@/store"
 
 import { BootstrapVue, BootstrapVueIcons  } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -23,9 +26,11 @@ Vue.config.productionTip = false
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
 Vue.use(BootstrapVueIcons )
 
+Vue.use(Vuex)
+
 new Vue({
+  store,
   render: h => h(App),
 }).$mount('#app')

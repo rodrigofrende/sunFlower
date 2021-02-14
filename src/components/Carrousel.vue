@@ -76,13 +76,11 @@
       }
     },
     methods: {
-      onSlideStart(slide) {
+      onSlideStart() {
         this.sliding = true
-        console.log(slide)
       },
-      onSlideEnd(slide) {
+      onSlideEnd() {
         this.sliding = false
-        console.log(slide)
       }
     }
   }
