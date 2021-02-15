@@ -15,7 +15,7 @@
       Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
 
-    <b-button v-b-modal.modal-1 >Go somewhere</b-button>
+    <b-button v-b-modal.modal-1 >Ver más</b-button>
   </b-card>
   <b-card
     title="Card Title2"
@@ -29,7 +29,7 @@
       Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
 
-    <b-button href="#" >Go somewhere</b-button>
+    <b-button href="#" >Ver más</b-button>
   </b-card>
   <b-card
     title="Card Title2"
@@ -43,7 +43,7 @@
       Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
 
-    <b-button class="custom-button" href="#" >Go somewhere</b-button>
+    <b-button class="custom-button" href="#" >Ver más</b-button>
   </b-card>
   
 </b-card-group>
@@ -91,7 +91,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .cards{
     margin: 5% 5%;
 }
@@ -102,8 +102,9 @@ export default {
   color: red !important;
 }
 .card-body {
-  color: white;
-  background-color: #252525
+  color: black;
+  background-color: #FFF;
+  box-shadow: black 2px 10px 10px;
 }
 
 </style>
