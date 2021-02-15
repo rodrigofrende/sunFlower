@@ -1,5 +1,5 @@
 <template>
-<div class="cards" id="trabajos"> 
+<div class="cards my-1" id="trabajos"> 
 <h1 class="section-heading">Trabajos</h1>
 <!-- TODO :hacer un FOR con varias cards, para que se cargue de manera dinamica -->
 <b-card-group deck>
@@ -43,7 +43,7 @@
       Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
 
-    <b-button href="#" >Go somewhere</b-button>
+    <b-button class="custom-button" href="#" >Go somewhere</b-button>
   </b-card>
   
 </b-card-group>
@@ -93,16 +93,14 @@ export default {
 
 <style>
 .cards{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    padding: 0 0 5%;
+    margin: 5% 5%;
 }
 .padding-cards {
     margin: 20px;
 }
-
+.custom-button {
+  color: red !important;
+}
 .card-body {
   color: white;
   background-color: #252525

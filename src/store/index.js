@@ -6,7 +6,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    errors: {}
+    errors: {},
+    itemImage: null
   },
 
   getters: {
@@ -18,12 +19,18 @@ export default new Vuex.Store({
   mutations: {
     SET_ERRORS(state, data) {
       state.errors = data;
+    },
+    setImage (state, image) {
+        state.itemImage = image
     }
   },
 
   actions: {
     setErrors({ commit }, errors) {
       commit("SET_ERRORS", errors);
+    },
+    POM_setImage ({ commit }, image) {
+        commit('setImage', image)
     }
   }
 });

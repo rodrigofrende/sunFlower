@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .serviceIcon {
     width: 120px;
     height: 120px;

@@ -4,6 +4,7 @@
     <Carrousel/>
     <Services/>
     <Cards/>
+    <PlantOfTheMonth/>
     <Contact/>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Carrousel from './components/Carrousel'
 import Services from './components/Services'
 import Cards from './components/Cards'
 import Contact from './components/Contact'
+import PlantOfTheMonth from './components/PlantOfTheMonth'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Carrousel,
     Services,
     Cards,
-    Contact
+    Contact,
+    PlantOfTheMonth
   }
 }
 </script>
@@ -38,7 +41,7 @@ export default {
   background-color: #1f2123; ;
   font-family: 'Syne', sans-serif;
 }
-
+@import './assets/Styles/sunflower.css';
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@615&display=swap');
 
 </style>
