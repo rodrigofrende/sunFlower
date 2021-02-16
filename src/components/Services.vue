@@ -1,5 +1,5 @@
 <template>
-<div class="container" id="servicios">
+<div class="container my-5" id="servicios">
     <div class="text-center margin">
         <h1 class="section-heading">Servicios</h1>
         <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>

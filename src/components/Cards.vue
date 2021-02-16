@@ -1,5 +1,5 @@
 <template>
-<div class="cards my-1" id="trabajos"> 
+<div class="cards my-5" id="trabajos"> 
 <h1 class="section-heading">Trabajos</h1>
 <!-- TODO :hacer un FOR con varias cards, para que se cargue de manera dinamica -->
 <b-card-group deck>
@@ -102,6 +102,12 @@ export default {
   color: black;
   background-color: #FFF;
   box-shadow: black 2px 10px 10px;
+}
+.card:hover {
+  -webkit-box-shadow: 0 0 15px #999;
+  -moz-box-shadow: 0 0 15px #999;
+  -ms-box-shadow: 0 0 15px #999;
+  box-shadow: 0 0 15px #999;
 }
 
 </style>

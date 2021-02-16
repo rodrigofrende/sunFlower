@@ -1,10 +1,10 @@
 <template>
- <b-container class="my-3">
+ <b-container class="my-5" id="plantasDelMes">
      <b-row class="container-title">
         <h1>Plantas del Mes</h1>
      </b-row>
     <b-row class="container-body">
-        <b-col cols="6">
+        <b-col id="table-col" cols="6" xs="auto">
             <div class="month-title-container">
                 <span class="month-title">{{currentMonth}}</span>
             </div>
@@ -13,14 +13,13 @@
                     class="custom-table" 
                     selectable 
                     @row-clicked="selectImage" 
-                    striped 
                     hover 
                     :items="items"
                     :fields="fields">
                 </b-table>
             </div>
         </b-col>
-        <b-col cols="6" class="d-flex my-auto justify-content-center">
+        <b-col cols="6" id="image-col" xs="auto" class="d-flex my-auto justify-content-center">
             <div class="image-container" v-if="itemImage">
                 <b-img class="my-auto" thumbnail center :src="itemImage" fluid-grow alt="Responsive image"></b-img>
             </div>
@@ -93,7 +92,22 @@ export default {
     font-size: 2rem;
     text-transform: capitalize;
 }
-.table-container {
-
+#table-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+#image-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media screen and (max-width: 500px) {
+    #table-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #image-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 </style>
