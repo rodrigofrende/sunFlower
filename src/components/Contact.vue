@@ -5,7 +5,7 @@
             <h2 class="footer-align-left contact-header">Contacto</h2>
             <b-col cols="4">
             <h5
-                class="footer-align-left"
+                class="footer-align-left d-flex"
                 @click="contactRedirect((route = 'instagram'))"
             >
                 <font-awesome-icon
@@ -16,7 +16,7 @@
             </b-col>
             <b-col cols="4">
             <h5
-                class="footer-align-left"
+                class="footer-align-left d-flex"
                 @click="contactRedirect((route = 'facebook'))"
             >
                 <font-awesome-icon
@@ -27,7 +27,7 @@
             </b-col>
             <b-col cols="4" class="d-flex">
             <h5
-                class="footer-align-left"
+                class="footer-align-left d-flex"
                 @click="contactRedirect((route = 'whatsapp'))"
             >
                 <font-awesome-icon
