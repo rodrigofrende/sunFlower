@@ -47,6 +47,42 @@ export default new Vuex.Store({
         footer: 'https://www.instagram.com/p/CEaIa39BcMf/',
         resume: 'En el barrio Santa Rita. Realización de cantero y mantenimiento.'
       }
+      // {
+      //   id: 4 ,
+      //   imgsrc:  'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118537407_633068990943225_7563764460818758969_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=MMXgIJvJ94EAX8k7rJe&tp=1&oh=619feedd15517ba03d3c5cbe86579b56&oe=605790EA',
+      //   jobTitle: 'Cantero',
+      //   title: 'Barrio Santa Rita - Canning',
+      //   content1: 'Segundo año y terminando los canteros del frente ,trabajo interrumpido por la cuarentena.',
+      //   content2: 'Este es el momento en que todo crece vertiginosamente así que pronto va a lucir mejor aun. Gracias Mariano y familia por confiar en mi trabajo,da gusto trabajar con gente como ustedes.🌞🍀🌱',
+      //   image1: 'https://instagram.faep9-2.fna.fbcdn.net/v/t51.2885-15/e35/118398348_326945228717461_1264111990886771319_n.jpg?_nc_ht=instagram.faep9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=q38LRcnxK0MAX8dsTTL&tp=1&oh=37b52ab5bacac0c10a526e6d4f43a460&oe=6057581A',
+      //   image2: 'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118452999_905407003285526_7802602726706231986_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=KmOwcAUo9W4AX-jmFgG&tp=1&oh=33ef837f9c184bc70d68d5907d035fef&oe=6059C007',
+      //   footer: 'https://www.instagram.com/p/CEaIa39BcMf/',
+      //   resume: 'En el barrio Santa Rita. Realización de cantero y mantenimiento.'
+      // },
+      // {
+      //   id: 5 ,
+      //   imgsrc:  'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118537407_633068990943225_7563764460818758969_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=MMXgIJvJ94EAX8k7rJe&tp=1&oh=619feedd15517ba03d3c5cbe86579b56&oe=605790EA',
+      //   jobTitle: 'Cantero',
+      //   title: 'Barrio Santa Rita - Canning',
+      //   content1: 'Segundo año y terminando los canteros del frente ,trabajo interrumpido por la cuarentena.',
+      //   content2: 'Este es el momento en que todo crece vertiginosamente así que pronto va a lucir mejor aun. Gracias Mariano y familia por confiar en mi trabajo,da gusto trabajar con gente como ustedes.🌞🍀🌱',
+      //   image1: 'https://instagram.faep9-2.fna.fbcdn.net/v/t51.2885-15/e35/118398348_326945228717461_1264111990886771319_n.jpg?_nc_ht=instagram.faep9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=q38LRcnxK0MAX8dsTTL&tp=1&oh=37b52ab5bacac0c10a526e6d4f43a460&oe=6057581A',
+      //   image2: 'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118452999_905407003285526_7802602726706231986_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=KmOwcAUo9W4AX-jmFgG&tp=1&oh=33ef837f9c184bc70d68d5907d035fef&oe=6059C007',
+      //   footer: 'https://www.instagram.com/p/CEaIa39BcMf/',
+      //   resume: 'En el barrio Santa Rita. Realización de cantero y mantenimiento.'
+      // },
+      // {
+      //   id: 6 ,
+      //   imgsrc:  'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118537407_633068990943225_7563764460818758969_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=MMXgIJvJ94EAX8k7rJe&tp=1&oh=619feedd15517ba03d3c5cbe86579b56&oe=605790EA',
+      //   jobTitle: 'Cantero',
+      //   title: 'Barrio Santa Rita - Canning',
+      //   content1: 'Segundo año y terminando los canteros del frente ,trabajo interrumpido por la cuarentena.',
+      //   content2: 'Este es el momento en que todo crece vertiginosamente así que pronto va a lucir mejor aun. Gracias Mariano y familia por confiar en mi trabajo,da gusto trabajar con gente como ustedes.🌞🍀🌱',
+      //   image1: 'https://instagram.faep9-2.fna.fbcdn.net/v/t51.2885-15/e35/118398348_326945228717461_1264111990886771319_n.jpg?_nc_ht=instagram.faep9-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=q38LRcnxK0MAX8dsTTL&tp=1&oh=37b52ab5bacac0c10a526e6d4f43a460&oe=6057581A',
+      //   image2: 'https://instagram.faep9-1.fna.fbcdn.net/v/t51.2885-15/e35/118452999_905407003285526_7802602726706231986_n.jpg?_nc_ht=instagram.faep9-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=KmOwcAUo9W4AX-jmFgG&tp=1&oh=33ef837f9c184bc70d68d5907d035fef&oe=6059C007',
+      //   footer: 'https://www.instagram.com/p/CEaIa39BcMf/',
+      //   resume: 'En el barrio Santa Rita. Realización de cantero y mantenimiento.'
+      // }
     ]
   },
 

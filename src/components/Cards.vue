@@ -2,7 +2,7 @@
 <div class="cards my-5" id="trabajos"> 
 <h1 class="section-heading">Trabajos</h1>
 <!-- TODO :hacer un FOR con varias cards, para que se cargue de manera dinamica -->
-<b-card-group deck>
+<b-card-group columns>
   <b-card
     :title="job.jobTitle"
     :img-src="job.imgsrc"
