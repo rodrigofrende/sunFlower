@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     contactRedirect(route) {
-      const instagramURL = "https://www.instagram.com/p/CFiYhKTBMpa/"
+      const instagramURL = "https://www.instagram.com/greenstorming_jardineria/"
       const facebookURL = 'https://www.facebook.com/albertojose.frende'
       const wppURL = 'https://wa.me/+5491159881832?text=Hola!, vi tus servicios en la pagina y me gustaria contactarte'
       var win = ''

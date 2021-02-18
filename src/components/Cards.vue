@@ -4,20 +4,24 @@
 <!-- TODO :hacer un FOR con varias cards, para que se cargue de manera dinamica -->
 <b-card-group deck>
   <b-card
-    title="Card Title"
-    img-src="https://picsum.photos/600/300/?image=25"
+    :title="job.jobTitle"
+    :img-src="job.imgsrc"
     img-alt="Image"
     img-top
+    img-height="auto"
+    img-width="auto"
     tag="article"
     class="padding-cards"
+    v-for="job in jobCards"
+    :key="job.id"
   >
     <b-card-text>
-      Some quick example text to build on the card title and make up the bulk of the card's content.
+      {{job.resume}}
     </b-card-text>
 
-    <b-button v-b-modal.modal-1 class="custom-button" >Ver más</b-button>
+    <b-button @click="openModal(idModal= job.id)" class="custom-button" >Ver más</b-button>
   </b-card>
-  <b-card
+  <!-- <b-card
     title="Card Title2"
     img-src="https://picsum.photos/600/300/?image=25"
     img-alt="Image"
@@ -44,49 +48,38 @@
     </b-card-text>
 
     <b-button class="custom-button" href="#" >Ver más</b-button>
-  </b-card>
+  </b-card> -->
   
 </b-card-group>
-<b-modal 
-  id="modal-1" 
-  title="Work Title"
-  header-bg-variant="dark"
-  header-text-variant="light"
-  body-bg-variant="dark"
-  body-text-variant="light"
-  footer-bg-variant="dark"
-  footer-text-variant="light"
->
-  <p class="my-4">Work on modal!</p>
-  <p class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni blanditiis veritatis in adipisci, quas explicabo ex ipsa corporis repellendus obcaecati perferendis suscipit laudantium porro commodi harum quo. Laudantium, perferendis quibusdam!</p>
-  <b-img src="https://picsum.photos/1024/400/?image=41" fluid alt="Responsive image"></b-img>
-  <template v-slot:modal-footer>
-      <div class="w-100">
-        <p class="float-left">Modal Footer Content</p>
-        <b-button
-          variant="secondary"
-          size="sm"
-          class="float-right"
-          @click="show=false"
-        >
-          Close
-        </b-button>
-      </div>
-    </template>
-</b-modal>
+<Modal :data="modalData" /> 
 </div>
 </template>
-
 <script>
+import Modal from '@/components/CustomModal'
 export default {
     name: 'Cards',
+    components: {Modal},
     data() {
-      return {
-        
+      return {          
+      }
+    },
+    computed: {
+      modalIsOpen () {
+        return this.$store.state.modalOpened
+      },
+      modalData () {
+        return this.$store.state.modalData
+      },
+      jobCards () {
+        return this.$store.state.jobCards
       }
     },
     methods: {
-      
+      openModal (idModal) {
+        this.$store.dispatch('MODAL_getModalData', idModal)
+        this.$store.dispatch('MODAL_openModal', true)
+        console.log(this.modalIsOpen)
+      }
     }
 }
 </script>
